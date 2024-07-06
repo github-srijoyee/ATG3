@@ -504,6 +504,10 @@ background: linear-gradient(105deg, rgba(194,43,180,1) 0%, rgba(146,39,174,1) 60
     width: 20vh !important;
     object-fit: cover;
   }
+  .owl-carousel .owl-item .dots{
+    position: relative;
+    top: -1.5rem;
+  }
   }
 
     
