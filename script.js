@@ -7,7 +7,7 @@ const panels = document.querySelectorAll('.panel');
 
 panels.forEach((panel) => {
     gsap.fromTo(panel, {
-        autoAlpha: 0.8,  //make it zero to make things appear slowly
+        autoAlpha: 1,  //make it zero to make things appear slowly
         y: 0
     }, {
         autoAlpha: 1,
@@ -56,8 +56,8 @@ toggleActions: 'play reverse reverse complete'
 });
 
 tll.to('.animated-element2', {
-y: '+=300',   // Move animated-element2 downwards by 200px (adjust this value as needed)
-opacity: 0.8,   // Fade out the element
+y: '+=300',   
+opacity: 1,   
 duration: 0.5
 });
 
@@ -190,7 +190,7 @@ toggleActions: 'play reverse reverse complete'
 });
 
 tl10.to('.animated-element10', {
-y: '-=500',   // Move animated-element2 downwards by 200px (adjust this value as needed)
+y: '-=300',   // Move animated-element2 downwards by 200px (adjust this value as needed)
 duration: 0.5
 });
 
@@ -215,7 +215,7 @@ let tl13 = gsap.timeline({
 scrollTrigger: {
 trigger: '.animated-element13',
 start: '50% center',   // Start animation when the top of the trigger element reaches the bottom of the viewport
-end: '50% center',  // End animation when the bottom of the trigger element reaches the center of the viewport
+end: '150% center',  // End animation when the bottom of the trigger element reaches the center of the viewport
 scrub: true,
 markers: false,
 toggleActions: 'play reverse reverse complete'
@@ -232,7 +232,7 @@ let tl12 = gsap.timeline({
 scrollTrigger: {
 trigger: '.animated-element12',
 start: '50% center',   // Start animation when the top of the trigger element reaches the bottom of the viewport
-end: '50% center',  // End animation when the bottom of the trigger element reaches the center of the viewport
+end: '150% center',  // End animation when the bottom of the trigger element reaches the center of the viewport
 scrub: true,
 markers: false,
 toggleActions: 'play reverse reverse complete'
