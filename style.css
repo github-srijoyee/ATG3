@@ -36,20 +36,20 @@
 }
 .anime2 .animated-element2 img{
     height: 650px;
-    width: 350px;
+    width: 300px;
 }
 .anime2 .animated-element3 img{
     height: 650px;
-    width: 350px;
+    width: 300px;
     z-index: 10;
 }
 .anime3 .animated-element2 img{
-    height: 650px;
+    height: 550px;
     width: 350px;
 }
 .anime3 .animated-element3 img{
     height: 650px;
-    width: 350px;
+    width: 300px;
 }
 .anime4 .animated-element4 img{
     height: 550px;
@@ -447,10 +447,28 @@ background-color: #6311A8;
 }
 
 @media screen and (max-width: 900px) {
+    .mobile {
+        display: block;
+      }
     body,html{
         overflow-y: hidden;
     }
-  .container-fluid{
+    #customAlert{
+        display: none;
+    }
+    .owl-carousel .card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .card-img-top {
+        max-width: 900px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+  .row{
     display: none;
   }
   .mobile{
@@ -518,6 +536,7 @@ background: linear-gradient(105deg, rgba(194,43,180,1) 0%, rgba(146,39,174,1) 60
   .owl-carousel .owl-item .card-body {
     height: 45vh !important;
     object-fit: cover;
+    width: auto;
   }
   .owl-carousel .owl-item .mobimg{
     position: relative;
@@ -531,5 +550,28 @@ background: linear-gradient(105deg, rgba(194,43,180,1) 0%, rgba(146,39,174,1) 60
     top: -1.5rem;
   }
   }
-
-    
+  @media screen and (max-width: 768px) {
+    .card-img-top{
+        max-width: 768px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .card-img-top{
+        max-width: 768px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .card-img-top{
+        max-width: 500px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .card-img-top{
+        max-width: 400px;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    .card-img-top{
+        max-width: 300px;
+    }
+  }

@@ -1,13 +1,11 @@
 
-// Register the ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
 
-// Create GSAP animations for each section
 const panels = document.querySelectorAll('.panel');
 
 panels.forEach((panel) => {
     gsap.fromTo(panel, {
-        autoAlpha: 1,  //make it zero to make things appear slowly
+        autoAlpha: 1,  
         y: 0
     }, {
         autoAlpha: 1,
