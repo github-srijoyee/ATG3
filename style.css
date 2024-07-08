@@ -34,20 +34,20 @@
 .anime7{
     justify-content: end;
 }
-.anime2 .animated-element2 img{
+.anime2 .animated-element16 img{
     height: 650px;
-    width: 300px;
+    width: 350px;
 }
 .anime2 .animated-element3 img{
     height: 650px;
-    width: 300px;
+    width: 350px;
     z-index: 10;
 }
-.anime3 .animated-element2 img{
+.anime3 .animated-element14 img{
     height: 550px;
     width: 350px;
 }
-.anime3 .animated-element3 img{
+.anime3 .animated-element15 img{
     height: 650px;
     width: 300px;
 }
@@ -266,12 +266,27 @@ body {
 }
 .line-1 {
     transform: translateX(-5rem);
+    opacity: 1;
+    transition: all 1s ease-out;
+}
+.line-1.show{
+    opacity: 1;
 }
 .line-2 {
     transform: translateX(-3.5rem);
+    opacity: 1;
+    transition: all 1s ease-out;
+}
+.line-2.show{
+    opacity: 1;
 }
 .line-3 {
     transform: translateX(1rem);
+    opacity: 1;
+    transition: all 1s ease-out;
+}
+.line-3.show{
+    opacity:1;
 }
 .bg-custom-primary1{
 background-color: #6311A8;

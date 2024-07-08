@@ -241,6 +241,57 @@ tl12.to('.animated-element12', {
 y: '+=200',   // Move animated-element2 downwards by 200px (adjust this value as needed)
 duration: 0.5
 });
+
+let tl14 = gsap.timeline({
+    scrollTrigger: {
+    trigger: '.animated-element14',
+    start: '50% center',   // Start animation when the top of the trigger element reaches the bottom of the viewport
+    end: '150% center',  // End animation when the bottom of the trigger element reaches the center of the viewport
+    scrub: true,
+    markers: false,
+    toggleActions: 'play reverse reverse complete'
+    }
+    });
+    
+    tl14.to('.animated-element14', {
+    y: '+=300',   // Move animated-element2 downwards by 200px (adjust this value as needed)
+    duration: 0.5
+    });
+    let tl15 = gsap.timeline({
+        scrollTrigger: {
+        trigger: '.animated-element15',
+        start: '50% center',   // Start animation when the top of the trigger element reaches the bottom of the viewport
+        end: '150% center',  // End animation when the bottom of the trigger element reaches the center of the viewport
+        scrub: true,
+        markers: false,
+        toggleActions: 'play reverse reverse complete'
+        }
+        });
+        
+        tl15.to('.animated-element15', {
+        y: '-=300',   // Move animated-element2 downwards by 200px (adjust this value as needed)
+        duration: 0.5
+        });
+
+        tl14.to('.animated-element14', {
+            y: '+=300',   // Move animated-element2 downwards by 200px (adjust this value as needed)
+            duration: 0.5
+            });
+            let tl16 = gsap.timeline({
+                scrollTrigger: {
+                trigger: '.animated-element16',
+                start: '50% center',   // Start animation when the top of the trigger element reaches the bottom of the viewport
+                end: '150% center',  // End animation when the bottom of the trigger element reaches the center of the viewport
+                scrub: true,
+                markers: false,
+                toggleActions: 'play reverse reverse complete'
+                }
+                });
+                
+                tl16.to('.animated-element16', {
+                y: '+=300',   // Move animated-element2 downwards by 200px (adjust this value as needed)
+                duration: 0.5
+                });
 const textLines = document.querySelectorAll('h1');
 
 textLines.forEach((line, index) => {

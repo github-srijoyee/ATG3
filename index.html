@@ -256,7 +256,7 @@
                 </div>
                 <div class="col-7 bg-custom-secondary2 full-height content-wrapper right-col">
                     <div class="anime2">
-                        <div class="animated-element2">
+                        <div class="animated-element16">
                             <img src="./images/veme-blockchain-app-developed.png" alt="">
                                                 </div>
                     <div class="animated-element3">
@@ -363,7 +363,7 @@
             <div class="mobile">
 
                 <div class="owl-carousel owl-theme">
-                    <div class="item h-full">
+                    <div class="item">
                         <div class="card">
                             <img src="./images/mobile/1.png" class="card-img-top" alt="...">
                             <div class="card-body body1">
@@ -465,10 +465,10 @@
                 </div>
                 <div class="col-7 bg-custom-secondary3 full-height content-wrapper right-col">
                     <div class="anime3">
-                        <div class="animated-element2">
+                        <div class="animated-element14">
                             <img src="./images/nasa-fitness-tracking-mobile-app.png" alt="">
                                                 </div>
-                    <div class="animated-element3">
+                    <div class="animated-element15">
 <img src="./images/measure-total-body-weight-through-fitness-app.png" alt="">
                     </div>
 
@@ -1707,6 +1707,42 @@ window.onload = function() {
       }
   });
   </script>
+  <script>
+    $(document).ready(function(){
+        var controller=new ScrollMagic.Controller();
+
+        var outerscene=new ScrollMagic.Scene({
+            triggerElement:'.line-2',
+            reverse:false
+        })
+        .setClassToggle('.line-2','.show')
+        .addTo(controller);
+    })
+  </script>
+    <script>
+        $(document).ready(function(){
+            var controller=new ScrollMagic.Controller();
+    
+            var outerscene=new ScrollMagic.Scene({
+                triggerElement:'.line-1',
+                reverse:false
+            })
+            .setClassToggle('.line-1','.show')
+            .addTo(controller);
+        })
+      </script>
+        <script>
+            $(document).ready(function(){
+                var controller=new ScrollMagic.Controller();
+        
+                var outerscene=new ScrollMagic.Scene({
+                    triggerElement:'.line-3',
+                    reverse:false
+                })
+                .setClassToggle('.line-3','.show')
+                .addTo(controller);
+            })
+          </script>
   <script type="text/javascript">
     $('.owl-carousel').owlCarousel({
     loop:true,
